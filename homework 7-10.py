@@ -29,11 +29,11 @@ print(camelcase)
 #задание10
 writer = "Leo Tolstoy*1828-08-28*1910-11-20"
 #writer = "Marcus Aurelius*121-04-26*180-03-17"
-name, DOB, DOD = writer.split("*")
-DOB1 = DOB.split("-")
-DOD1 = DOD.split("-")
-age = int(DOD1[0])-int(DOB1[0])
-print(name,",", age)
+name, date1, date2 = writer.split("*")
+date_of_birth = date1.split("-")
+date_of_death = date2.split("-")
+age = int(date_of_death[0])-int(date_of_birth[0])
+print("{}, {}".format(name,age))
 
 
 
